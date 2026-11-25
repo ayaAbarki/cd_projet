@@ -5,6 +5,8 @@ pipeline {
         NEXUS_URL = 'http://localhost:8081/repository/python-release/Release.zip'
         NEXUS_USER = 'admin'
         NEXUS_PASSWORD = 'Nexus_1839@'
+        PYTHON_DIR = 'C:\\Users\\HP\\AppData\\Local\\Python\\pythoncore-3.14-64'
+        PATH = "${PYTHON_DIR};${PYTHON_DIR}\\Scripts;${env.PATH}"
     }
 
     stages {
